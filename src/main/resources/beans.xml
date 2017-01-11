@@ -11,6 +11,25 @@
         <property name="helloWorld" ref="springHelloWorld"/>
     </bean>
 
+    <bean id="customerService" class="com.wangsd.springDemo.aop.CustomerService">
+        <property name="name" value="YiiBaii Mook Kim"/>
+        <property name="url" value="http://www.yiibai.com"/>
+    </bean>
 
+    <bean id="hijackBeforeMethodBean" class="com.wangsd.springDemo.aop.HijackBeforeMethod"/>
+    <bean id="hijackAfterMethodBean" class="com.wangsd.springDemo.aop.HijackAfterMethod" />
+    <bean id="hijackThrowException" class="com.wangsd.springDemo.aop.HijackThrowException" />
+    <bean id="hijackAroundMethod" class="com.wangsd.springDemo.aop.HijackAroundMethod" />
+
+    <bean id="customerServiceProxy"  class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!-- ‘target’ – 定义你想拦截的bean。-->
+        <property name="target" ref="customerService"/>
+        <!-- ‘interceptorNames’ – 定义要应用这个代理/目标对象的类(通知) -->
+        <property name="interceptorNames">
+            <list>
+                <value>hijackAroundMethod</value>
+            </list>
+        </property>
+    </bean>
 
 </beans>
