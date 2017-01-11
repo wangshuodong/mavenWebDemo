@@ -1,0 +1,6 @@
+1、<context:annotation-config> 和 <context:component-scan>的区别
+http://www.cnblogs.com/leiOOlei/p/3713989.html
+2、Spring注解@Component、@Repository、@Service、@Controller @Resource、@Autowired、@Qualifier 解析
+http://www.ulewo.com/user/10001/blog/273
+3、使用RunWith注解改变JUnit的默认执行类，并实现自已的Listener
+http://blog.csdn.net/fenglibing/article/details/8584602
