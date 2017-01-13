@@ -8,3 +8,5 @@ http://www.cnblogs.com/leiOOlei/p/3713989.html
 http://www.ulewo.com/user/10001/blog/273
 5、使用RunWith注解改变JUnit的默认执行类，并实现自已的Listener
 http://blog.csdn.net/fenglibing/article/details/8584602
+6、在IDEA中实战Git
+http://blog.csdn.net/autfish/article/details/52513465

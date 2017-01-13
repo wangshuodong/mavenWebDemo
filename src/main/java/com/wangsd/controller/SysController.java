@@ -16,11 +16,9 @@ public class SysController {
 
     @RequestMapping("/hello")
     public String hello(Model model) {
-        try {
+
             int a = 2 / 0;
-        }catch (Exception e) {
-            logger.error(e);
-        }
+
         model.addAttribute("greeting", "Hello Spring MVC");
         return "helloworld";
     }
