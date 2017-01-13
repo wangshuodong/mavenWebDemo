@@ -15,7 +15,7 @@
     <!--<context:property-placeholder location="classpath*:config.properties" />-->
     <!--
         使用这种方式引入属性文件，可以在catalina.sh里面配置环境变量：
-        JAVA_OPTS="-Djsuws.config.path=/home/app/jsuws/application.properties"
+        JAVA_OPTS="$JAVA_OPTS -Djsuws.config.path=/home/app/jsuws/application.properties -Dlogback.configurationFile=/home/app/jsuws/logback.xm"
         可以使用工程以外的properties
      -->
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

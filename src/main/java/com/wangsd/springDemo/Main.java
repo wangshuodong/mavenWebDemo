@@ -9,9 +9,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-//        HelloWorldService service = (HelloWorldService)context.getBean("helloWorldService");
-//        service.getHelloWorld().sayHello();
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring/beans.xml");
+        HelloWorldService service = (HelloWorldService)context.getBean("helloWorldService");
+        service.getHelloWorld().sayHello();
         System.out.println(SpringContextUtils.getApplicationContext());
 
     }

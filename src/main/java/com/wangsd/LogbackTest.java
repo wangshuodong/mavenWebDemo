@@ -1,14 +1,15 @@
 package com.wangsd;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Administrator on 2017/1/11.
  */
 public class LogbackTest {
 
-    private final static Logger logger = LoggerFactory.getLogger(LogbackTest.class);
+    private static final Logger logger = LogManager.getLogger(LogbackTest.class.getName());
 
     public static void main(String[] args) {
         logger.info("logger.info");
