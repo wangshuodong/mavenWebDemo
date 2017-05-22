@@ -5,4 +5,5 @@ package com.wangsd.springDemo;
  */
 public interface HelloWorld {
     public void sayHello();
+
 }
